@@ -61,3 +61,5 @@ function retrievePosition(position) {
 navigator.geolocation.getCurrentPosition(retrievePosition);
 let currentLocationButton = document.querySelector("#current-btn");
 currentLocationButton.addEventListener("click", showWeather);
+
+//    //https://github.com/OlgaNyko/WeatherProject
