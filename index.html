@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2b6ed2536a.js" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="styling/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+      <div class="col-6"><h1>Open Weather</h1></div>
+
+ <form class="col-6" id="form-input"> <div class="input-group mb-3 location-search">
+  <input type="text" class="form-control" placeholder="Location" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-primary" type="submit" id="button-addon2">Search</button>
+  <button type="button" class="btn btn-outline-primary" id="current-btn">Current location</button>
+  
+</div>
+ </form>
+<hr/>
+</div>
+
+  <div class="row first-block">
+      <div class="col">
+        <ul>
+          <li class="picture"><i class="fa-solid fa-cloud-sun"></i></li>
+           <li><span class="temperature" id="today-temperature">19</span><span class="units">
+  <a href="#" id="celsius-temp" style="text-decoration: none">°C</a>/<a href="#" id="fahrenheit-temp" style="text-decoration: none">°F</a> 
+</span></li>
+      </ul>
+    </div>
+
+  
+    <div class="col">
+        <br/>
+      <ul class="humidity-wind">
+          <li>Humidity</li>
+          <li>Wind Direction</li>
+          <li>Wind speed (km/h)</li>
+      </ul>
+    </div>
+      <div class="col">
+          <br/>
+      <ul class="humidity-wind">
+          <li>10</li>
+          <li>SW</li>
+          <li>2(km/h)</li>
+      </ul>
+    </div>
+      <div class="col-4">
+        <ul>
+      <li class="city-name" id="city">Paris</li>
+      <li class="small-text" id="current-date">Date</li>
+      </ul>
+    </div>
+    
+      <div class="row second-block">
+ <div class="col">
+<ul>
+    <li class="day">Thu</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Fri</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Sat</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Sun</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Mon</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Tue</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+ <div class="col">
+<ul>
+    <li class="day">Wed</li>
+    <li class="weather-picture"><i class="fa-solid fa-cloud-sun"></i></li>
+    <li class="week-temperature">10°</li>
+    <li class="week-temperature">3°</li>
+</ul>
+</div>
+    </div>
+        </div>
+      </form>
+    </div>
+    <script src="java/java.js"></script>
+  </body>
+</html>
