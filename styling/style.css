@@ -71,3 +71,7 @@ ul {
   font-size: 25px;
   text-align: center;
 }
+#github-link {
+  color: #085ed6;
+  text-decoration: none;
+}
